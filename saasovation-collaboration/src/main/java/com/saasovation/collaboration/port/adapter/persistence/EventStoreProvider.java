@@ -35,13 +35,11 @@ public class EventStoreProvider {
         this.initializeMySQL();
     }
 
-    private void initializeLevelDB() {
-        if (FOR_LEVELDB) {
-            this.eventStore =
-                    LevelDBEventStore
-                            .instance("/data/leveldb/iddd_collaboration_es");
-        }
-    }
+	private void initializeLevelDB() {
+		if (FOR_LEVELDB) {
+			this.eventStore = LevelDBEventStore.instance(this.getClass().getResource("/").getPath() + "/data/leveldb/iddd_collaboration_es");
+		}
+	}
 
     private void initializeMySQL() {
         if (FOR_MYSQL) {

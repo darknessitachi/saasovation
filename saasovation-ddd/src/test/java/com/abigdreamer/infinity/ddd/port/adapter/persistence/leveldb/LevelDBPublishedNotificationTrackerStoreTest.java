@@ -31,7 +31,7 @@ import org.iq80.leveldb.DB;
 public class LevelDBPublishedNotificationTrackerStoreTest
         extends TestCase {
 
-    private static final String TEST_DATABASE = "/data/leveldb/iddd_common_test";
+	private static final String TEST_DATABASE = LevelDBTest.TEST_DATABASE;
 
     private DB database;
     private EventStore eventStore;

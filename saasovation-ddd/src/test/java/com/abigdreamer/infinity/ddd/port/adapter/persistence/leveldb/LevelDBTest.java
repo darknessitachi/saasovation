@@ -24,7 +24,7 @@ import org.iq80.leveldb.DB;
 
 public abstract class LevelDBTest extends TestCase {
 
-    protected static final String TEST_DATABASE = "/data/leveldb/iddd_common_test";
+	protected static final String TEST_DATABASE = LevelDBTest.class.getResource("/").getPath() + "/data/leveldb/iddd_common_test";
 
     private DB database;
 
