@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:cache="http://www.springframework.org/schema/cache" xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+     http://www.springframework.org/schema/aop
+     http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-4.0.xsd
+     http://www.springframework.org/schema/tx
+     http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+     http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+  
+	<bean id="eventStore" class="org.infinite.framework.ddd.port.adapter.persistence.hibernate.HibernateEventStore" autowire="byName" />
+
+	<bean id="eventStoreDataSource" destroy-method="close" 	class="org.apache.commons.dbcp.BasicDataSource">
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	    <property name="url" value="jdbc:mysql://localhost:3306/infinite" />
+	    <property name="username" value="root" />
+	    <property name="password" value="root" />
+	    <property name="initialSize" value="3" />
+	    <property name="defaultAutoCommit" value="false" />
+	</bean>
+
+	<bean id="mysqlJdbcEventStore" class="org.infinite.framework.ddd.port.adapter.persistence.eventsourcing.mysql.MySQLJDBCEventStore" autowire="byName">
+		<constructor-arg ref="eventStoreDataSource" />
+	</bean>
+
+    <bean id="publishedNotificationTrackerStore" class="org.infinite.framework.ddd.port.adapter.persistence.hibernate.HibernatePublishedNotificationTrackerStore" autowire="byName" />
+
+    <bean id="timeConstrainedProcessTrackerRepository" class="org.infinite.framework.ddd.port.adapter.persistence.hibernate.HibernateTimeConstrainedProcessTrackerRepository" autowire="byName" />
+
+    <bean id="testableTimeConstrainedProcessRepository" class="org.infinite.framework.ddd.domain.model.process.TestableTimeConstrainedProcessRepository" autowire="byName" />
+    
+
+</beans>

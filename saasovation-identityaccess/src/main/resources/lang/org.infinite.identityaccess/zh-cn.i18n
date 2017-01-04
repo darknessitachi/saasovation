@@ -1,0 +1,6 @@
+IdentityAccess.PluginName=身份与认证
+IdentityAccess.PluginDesc=多租户系统用户、角色、分组管理
+IdentityAccess.System=身份与认证
+IdentityAccess.System.Description=多租户系统用户、角色、分组管理
+IdentityAccess.Tenant=租赁管理
+IdentityAccess.Tenant.Description=租赁管理

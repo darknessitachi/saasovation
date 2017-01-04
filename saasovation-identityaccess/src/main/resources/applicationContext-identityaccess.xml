@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:cache="http://www.springframework.org/schema/cache" xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+     http://www.springframework.org/schema/aop
+     http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-4.0.xsd
+     http://www.springframework.org/schema/tx
+     http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+     http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+
+
+    <bean id="authenticationService" class="org.infinite.identityaccess.domain.service.AuthenticationService">
+	    <constructor-arg ref="tenantRepository" />
+	    <constructor-arg ref="userRepository" />
+	    <constructor-arg ref="encryptionService" />
+    </bean>
+
+    <bean id="authorizationService" class="org.infinite.identityaccess.domain.service.AuthorizationService">
+    	<constructor-arg ref="userRepository" />
+    	<constructor-arg ref="groupRepository" />
+    	<constructor-arg ref="roleRepository" />
+    </bean>
+
+    <bean id="domainRegistry" class="org.infinite.identityaccess.domain.DomainRegistry" />
+
+    <bean id="encryptionService" class="org.infinite.identityaccess.infrastructure.services.MD5EncryptionService" />
+
+    <bean id="groupMemberService" class="org.infinite.identityaccess.domain.service.GroupMemberService">
+    	<constructor-arg ref="userRepository" />
+    	<constructor-arg ref="groupRepository" />
+    </bean>
+
+    <bean id="groupRepository" class="org.infinite.identityaccess.infrastructure.persistence.HibernateGroupRepository" autowire="byName" />
+
+	<bean id="passwordService" class="org.infinite.identityaccess.domain.service.PasswordService" />
+
+    <bean id="roleRepository" class="org.infinite.identityaccess.infrastructure.persistence.HibernateRoleRepository" autowire="byName" />
+
+    <bean id="tenantProvisioningService" class="org.infinite.identityaccess.domain.service.TenantProvisioningService">
+	    <constructor-arg ref="tenantRepository" />
+	    <constructor-arg ref="userRepository" />
+    	<constructor-arg ref="roleRepository" />
+    </bean>
+
+    <bean id="tenantRepository" class="org.infinite.identityaccess.infrastructure.persistence.HibernateTenantRepository" autowire="byName" />
+
+    <bean id="userRepository" class="org.infinite.identityaccess.infrastructure.persistence.HibernateUserRepository" autowire="byName" />
+</beans>

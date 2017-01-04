@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<id>org.infinite.saasovation.agilepm</id>
+	<name>@{AgilePM.PluginName}</name>
+	<class>org.infinite.saasovation.agilepm.AgilePMPlugin</class>
+	<author>Infinite Software</author>
+	<provider>Infinite Software</provider>
+	<version>2.0</version>
+	<description>@{AgilePM.PluginDesc}</description>
+	<updateSite>http://www.infinite.com/update/</updateSite>
+	<UIAsJar>true</UIAsJar>
+	<resourceAsJar>true</resourceAsJar>
+	<required>
+		<plugin version="2.x">org.infinite.framework</plugin>
+	</required>
+	<menu>
+		<id>AgilePM.System</id>
+		<icon>icons/icon002a1.png</icon>
+		<description>@{AgilePM.System.Description}</description>
+		<parentId></parentId>
+		<order>9900</order>
+		<name>@{AgilePM.System}</name>
+		<type>Backend</type>
+		<URL></URL>
+	</menu>
+	<menu>
+		<id>AgilePM.Product</id>
+		<icon>icons/icon023a1.png</icon>
+		<description>@{AgilePM.Product.Description}</description>
+		<parentId>AgilePM.System</parentId>
+		<order>9010</order>
+		<name>@{AgilePM.Product}</name>
+		<type>Backend</type>
+		<URL>agilepm/product/product.zhtml</URL>
+	</menu>
+	<files>
+		<file>JAVA/plugins/org.infinite.saasovation.agilepm.plugin</file>
+		<directory>JAVA/lang/org.infinite.saasovation.agilepm/</directory>
+		<directory>JAVA/org/infinite/saasovation/agilepm</directory>
+	</files>
+</plugin>

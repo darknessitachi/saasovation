@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:cache="http://www.springframework.org/schema/cache" xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+     http://www.springframework.org/schema/aop
+     http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-4.0.xsd
+     http://www.springframework.org/schema/tx
+     http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+     http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+
+	
+    <bean id="accessApplicationService" class="org.infinite.identityaccess.application.AccessApplicationService" />
+
+    <bean id="applicationServiceRegistry" class="org.infinite.identityaccess.application.ApplicationServiceRegistry" autowire="byName" />
+
+    <bean id="eventProcessor" class="org.infinite.identityaccess.application.IdentityAccessEventProcessor" scope="prototype" autowire="byName" />
+
+    <bean id="eventStore" class="org.infinite.framework.ddd.port.adapter.persistence.hibernate.HibernateEventStore" autowire="byName" />
+
+	 <bean id="identityApplicationService" class="org.infinite.identityaccess.application.IdentityApplicationService" />
+
+    <bean id="notificationApplicationService" class="org.infinite.framework.ddd.notification.application.NotificationApplicationService"  />
+
+    <bean id="notificationPublisher" class="org.infinite.framework.ddd.port.adapter.notification.RabbitMQNotificationPublisher">
+        <constructor-arg index="0">
+            <ref bean="eventStore"/>
+        </constructor-arg>
+        <constructor-arg index="1">
+            <ref bean="publishedNotificationTrackerStore"/>
+        </constructor-arg>
+        <constructor-arg index="2" type="java.lang.Object" value="saasovation.identity_access"/>
+    </bean>
+
+    <bean id="publishedNotificationTrackerStore" class="org.infinite.framework.ddd.port.adapter.persistence.hibernate.HibernatePublishedNotificationTrackerStore" autowire="byName" />
+
+</beans>
