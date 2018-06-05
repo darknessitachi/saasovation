@@ -10,11 +10,11 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
-import com.abigdreamer.infinity.common.serializer.ObjectSerializer;
 import com.abigdreamer.infinity.ddd.media.Link;
 import com.abigdreamer.infinity.ddd.media.OvationsMediaType;
 import com.abigdreamer.infinity.ddd.notification.NotificationLog;
 import com.abigdreamer.infinity.ddd.notification.application.representation.NotificationLogRepresentation;
+import com.rapidark.framework.commons.serializer.ObjectSerializer;
 
 
 /**

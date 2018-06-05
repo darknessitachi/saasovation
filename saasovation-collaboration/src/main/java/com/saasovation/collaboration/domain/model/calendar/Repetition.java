@@ -16,7 +16,7 @@ package com.saasovation.collaboration.domain.model.calendar;
 
 import java.util.Date;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 public final class Repetition extends AssertionConcern {

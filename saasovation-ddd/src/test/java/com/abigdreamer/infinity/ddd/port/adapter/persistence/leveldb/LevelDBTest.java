@@ -14,12 +14,12 @@
 
 package com.abigdreamer.infinity.ddd.port.adapter.persistence.leveldb;
 
-import junit.framework.TestCase;
+import org.iq80.leveldb.DB;
 
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
 
-import org.iq80.leveldb.DB;
+import junit.framework.TestCase;
 
 
 public abstract class LevelDBTest extends TestCase {

@@ -3,13 +3,9 @@ package com.abigdreamer.saasovation.agilepm.port.adapter.persistence;
 import java.util.Collection;
 import java.util.Date;
 
-import junit.framework.TestCase;
-
 import org.iq80.leveldb.DB;
 
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.ProductId;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.backlogitem.BacklogItem;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.backlogitem.BacklogItemId;
@@ -22,8 +18,10 @@ import com.abigdreamer.saasovation.agilepm.domain.model.product.release.ReleaseI
 import com.abigdreamer.saasovation.agilepm.domain.model.product.sprint.Sprint;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.sprint.SprintId;
 import com.abigdreamer.saasovation.agilepm.domain.model.tenant.TenantId;
-import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBBacklogItemRepository;
-import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBDatabasePath;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
+
+import junit.framework.TestCase;
 
 
 public class LevelDBBacklogItemRepositoryTest extends TestCase {

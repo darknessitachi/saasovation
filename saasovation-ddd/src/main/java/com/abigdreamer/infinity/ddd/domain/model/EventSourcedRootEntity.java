@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

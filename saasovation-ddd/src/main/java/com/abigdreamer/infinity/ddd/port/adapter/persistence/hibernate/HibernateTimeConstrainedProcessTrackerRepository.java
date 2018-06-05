@@ -24,7 +24,7 @@ import org.hibernate.exception.ConstraintViolationException;
 import com.abigdreamer.infinity.ddd.domain.model.process.ProcessId;
 import com.abigdreamer.infinity.ddd.domain.model.process.TimeConstrainedProcessTracker;
 import com.abigdreamer.infinity.ddd.domain.model.process.TimeConstrainedProcessTrackerRepository;
-import com.abigdreamer.infinity.persistence.hibernate.HibernateSessionSupport;
+import com.rapidark.framework.persistence.hibernate.HibernateSessionSupport;
 
 
 public class HibernateTimeConstrainedProcessTrackerRepository

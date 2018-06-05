@@ -1,11 +1,5 @@
 package org.infinite.identityaccess.application;
 
-import junit.framework.TestCase;
-
-import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
-import com.abigdreamer.infinity.ddd.event.EventStore;
-import com.github.rapidark.framework.persistence.CleanableStore;
-
 import org.infinite.identityaccess.domain.DomainRegistry;
 import org.infinite.identityaccess.domain.model.access.Role;
 import org.infinite.identityaccess.domain.model.identity.ContactInformation;
@@ -21,6 +15,12 @@ import org.infinite.identityaccess.domain.model.identity.Tenant;
 import org.infinite.identityaccess.domain.model.identity.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
+import com.abigdreamer.infinity.ddd.event.EventStore;
+import com.rapidark.framework.persistence.CleanableStore;
+
+import junit.framework.TestCase;
 
 
 /**

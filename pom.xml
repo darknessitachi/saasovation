@@ -4,6 +4,13 @@
   <artifactId>saasovation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  
+  <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+  	<rapidark.version>3.3.1-SNAPSHOT</rapidark.version>
+  </properties>
+  
   <modules>
   	<module>saasovation-ddd</module>
   	<module>saasovation-agilepm</module>

@@ -12,10 +12,10 @@ import com.abigdreamer.infinity.ddd.port.adapter.messaging.Exchanges;
 import com.abigdreamer.infinity.ddd.port.adapter.notification.SlothMQNotificationPublisher;
 import com.abigdreamer.infinity.ddd.port.adapter.persistence.leveldb.LevelDBEventStore;
 import com.abigdreamer.infinity.ddd.port.adapter.persistence.leveldb.LevelDBPublishedNotificationTrackerStore;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
 import com.abigdreamer.saasovation.agilepm.application.notification.NotificationApplicationService;
 import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBDatabasePath;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
 
 
 /**

@@ -5,18 +5,16 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import junit.framework.TestCase;
-
 import org.iq80.leveldb.DB;
 
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
 import com.abigdreamer.saasovation.agilepm.domain.model.team.Team;
 import com.abigdreamer.saasovation.agilepm.domain.model.team.TeamRepository;
 import com.abigdreamer.saasovation.agilepm.domain.model.tenant.TenantId;
-import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBDatabasePath;
-import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBTeamRepository;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
+
+import junit.framework.TestCase;
 
 
 public class LevelDBTeamRepositoryTest extends TestCase {

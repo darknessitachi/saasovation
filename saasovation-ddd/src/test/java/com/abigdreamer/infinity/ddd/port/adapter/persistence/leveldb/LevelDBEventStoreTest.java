@@ -19,9 +19,8 @@ import java.util.Calendar;
 import com.abigdreamer.infinity.ddd.event.EventStore;
 import com.abigdreamer.infinity.ddd.event.StoredEvent;
 import com.abigdreamer.infinity.ddd.event.TestableDomainEvent;
-import com.abigdreamer.infinity.ddd.port.adapter.persistence.leveldb.LevelDBEventStore;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
 
 
 public class LevelDBEventStoreTest extends LevelDBTest {

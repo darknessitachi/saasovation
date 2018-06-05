@@ -1,6 +1,6 @@
 package com.abigdreamer.infinity.ddd.port.adapter.messaging.rabbitmq;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 /**
  * I am a configuration for making a connection to

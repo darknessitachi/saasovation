@@ -2,8 +2,8 @@ package com.abigdreamer.infinity.ddd.event;
 
 import java.util.Date;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
 import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

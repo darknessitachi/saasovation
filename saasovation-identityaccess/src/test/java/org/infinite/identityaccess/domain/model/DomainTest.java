@@ -1,13 +1,14 @@
 package org.infinite.identityaccess.domain.model;
 
-import junit.framework.TestCase;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
-import com.abigdreamer.infinity.persistence.hibernate.HibernateSessionSupport;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
+import com.rapidark.framework.persistence.hibernate.HibernateSessionSupport;
+
+import junit.framework.TestCase;
 
 
 

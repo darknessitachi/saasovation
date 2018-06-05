@@ -11,8 +11,8 @@ import javax.ws.rs.core.Response;
 
 import org.infinite.identityaccess.domain.model.identity.Group;
 
-import com.abigdreamer.infinity.common.serializer.ObjectSerializer;
 import com.abigdreamer.infinity.ddd.media.OvationsMediaType;
+import com.rapidark.framework.commons.serializer.ObjectSerializer;
 
 
 /**

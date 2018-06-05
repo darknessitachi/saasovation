@@ -7,7 +7,7 @@ import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
 import com.abigdreamer.infinity.ddd.event.EventSerializer;
 import com.abigdreamer.infinity.ddd.event.EventStore;
 import com.abigdreamer.infinity.ddd.event.StoredEvent;
-import com.github.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.CleanableStore;
 
 
 public class InMemoryEventStore implements EventStore, CleanableStore {

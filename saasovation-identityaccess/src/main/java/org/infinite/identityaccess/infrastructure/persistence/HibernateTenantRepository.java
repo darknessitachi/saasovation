@@ -5,13 +5,12 @@ import java.util.UUID;
 import org.hibernate.Query;
 import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.type.StringType;
-
-import com.abigdreamer.infinity.persistence.hibernate.HibernateSessionSupport;
-import com.github.rapidark.framework.persistence.CleanableStore;
-
 import org.infinite.identityaccess.domain.model.identity.Tenant;
 import org.infinite.identityaccess.domain.model.identity.TenantId;
 import org.infinite.identityaccess.domain.repository.TenantRepository;
+
+import com.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.hibernate.HibernateSessionSupport;
 
 
 /**

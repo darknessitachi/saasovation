@@ -8,7 +8,7 @@ import org.infinite.identityaccess.domain.model.identity.Tenant;
 import org.infinite.identityaccess.domain.model.identity.TenantId;
 import org.infinite.identityaccess.domain.repository.TenantRepository;
 
-import com.github.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.CleanableStore;
 
 
 /**

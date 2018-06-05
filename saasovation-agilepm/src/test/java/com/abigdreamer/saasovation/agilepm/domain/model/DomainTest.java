@@ -4,9 +4,9 @@ import org.iq80.leveldb.DB;
 
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
 import com.abigdreamer.infinity.ddd.domain.model.EventTrackingTestCase;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
 import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBDatabasePath;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
 
 
 /**

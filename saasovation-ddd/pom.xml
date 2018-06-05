@@ -20,10 +20,10 @@
       <version>4.12</version>
     </dependency>
      <dependency>
-		<groupId>com.github.rapidark</groupId>
-    	<artifactId>rapid-ark-framework</artifactId>
-		 <version>0.4.0-SNAPSHOT</version>
-	</dependency>
+			<groupId>com.rapidark</groupId>
+			<artifactId>rapidark-framework</artifactId>
+			<version>${rapidark.version}</version>
+		</dependency>
   </dependencies>
   
   <build>

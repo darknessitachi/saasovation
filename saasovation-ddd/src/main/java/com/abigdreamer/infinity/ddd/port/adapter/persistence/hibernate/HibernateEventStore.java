@@ -8,8 +8,8 @@ import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
 import com.abigdreamer.infinity.ddd.event.EventSerializer;
 import com.abigdreamer.infinity.ddd.event.EventStore;
 import com.abigdreamer.infinity.ddd.event.StoredEvent;
-import com.abigdreamer.infinity.persistence.hibernate.HibernateSessionSupport;
-import com.github.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.hibernate.HibernateSessionSupport;
 
 
 /**

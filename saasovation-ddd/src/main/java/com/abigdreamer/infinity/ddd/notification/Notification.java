@@ -3,8 +3,8 @@ package com.abigdreamer.infinity.ddd.notification;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
 import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

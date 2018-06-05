@@ -19,15 +19,14 @@ import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
-
-import com.abigdreamer.infinity.persistence.leveldb.AbstractLevelDBRepository;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBKey;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.ProductId;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.sprint.Sprint;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.sprint.SprintId;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.sprint.SprintRepository;
 import com.abigdreamer.saasovation.agilepm.domain.model.tenant.TenantId;
+import com.rapidark.framework.persistence.leveldb.AbstractLevelDBRepository;
+import com.rapidark.framework.persistence.leveldb.LevelDBKey;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
 
 
 public class LevelDBSprintRepository

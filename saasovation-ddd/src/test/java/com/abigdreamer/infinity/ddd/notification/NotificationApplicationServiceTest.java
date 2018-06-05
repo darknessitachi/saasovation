@@ -5,7 +5,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import javax.annotation.Resource;
-import javax.transaction.Transactional;
 
 import org.junit.After;
 import org.junit.Before;
@@ -14,12 +13,13 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.TransactionConfiguration;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
 import com.abigdreamer.infinity.ddd.event.EventStore;
 import com.abigdreamer.infinity.ddd.event.TestableDomainEvent;
 import com.abigdreamer.infinity.ddd.notification.application.NotificationApplicationService;
-import com.github.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.CleanableStore;
 
 
 /**

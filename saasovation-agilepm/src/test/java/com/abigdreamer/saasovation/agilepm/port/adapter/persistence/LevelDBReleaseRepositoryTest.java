@@ -20,20 +20,18 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import junit.framework.TestCase;
-
 import org.iq80.leveldb.DB;
 
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.ProductId;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.release.Release;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.release.ReleaseId;
 import com.abigdreamer.saasovation.agilepm.domain.model.product.release.ReleaseRepository;
 import com.abigdreamer.saasovation.agilepm.domain.model.tenant.TenantId;
-import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBDatabasePath;
-import com.abigdreamer.saasovation.agilepm.port.adapter.persistence.LevelDBReleaseRepository;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
+
+import junit.framework.TestCase;
 
 
 public class LevelDBReleaseRepositoryTest extends TestCase {

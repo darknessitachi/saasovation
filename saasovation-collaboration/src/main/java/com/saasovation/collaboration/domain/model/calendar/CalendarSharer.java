@@ -14,7 +14,7 @@
 
 package com.saasovation.collaboration.domain.model.calendar;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 import com.saasovation.collaboration.domain.model.collaborator.Participant;
 
 public final class CalendarSharer

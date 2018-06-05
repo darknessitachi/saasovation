@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 
 import org.infinite.identityaccess.domain.service.EncryptionService;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

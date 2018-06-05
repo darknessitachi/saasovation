@@ -1,7 +1,7 @@
 package com.abigdreamer.infinity.ddd.event;
 
-import com.abigdreamer.infinity.common.serializer.AbstractSerializer;
 import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
+import com.rapidark.framework.commons.serializer.AbstractSerializer;
 
 
 /**

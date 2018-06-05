@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
 import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 

@@ -7,7 +7,7 @@ import org.hibernate.Query;
 import com.abigdreamer.infinity.ddd.notification.Notification;
 import com.abigdreamer.infinity.ddd.notification.PublishedNotificationTracker;
 import com.abigdreamer.infinity.ddd.notification.PublishedNotificationTrackerStore;
-import com.abigdreamer.infinity.persistence.hibernate.HibernateSessionSupport;
+import com.rapidark.framework.persistence.hibernate.HibernateSessionSupport;
 
 
 

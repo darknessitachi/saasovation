@@ -3,7 +3,7 @@ package org.infinite.identityaccess.domain.model.identity;
 import java.io.Serializable;
 import java.util.regex.Pattern;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

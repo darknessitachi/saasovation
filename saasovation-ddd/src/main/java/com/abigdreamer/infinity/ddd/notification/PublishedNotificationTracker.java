@@ -2,7 +2,7 @@ package com.abigdreamer.infinity.ddd.notification;
 
 import java.io.Serializable;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 public class PublishedNotificationTracker extends AssertionConcern implements Serializable {

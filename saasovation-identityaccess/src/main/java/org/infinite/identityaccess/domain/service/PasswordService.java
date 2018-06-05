@@ -2,7 +2,7 @@ package org.infinite.identityaccess.domain.service;
 
 import java.util.Random;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

@@ -7,7 +7,7 @@ import org.infinite.identityaccess.domain.repository.GroupRepository;
 import org.infinite.identityaccess.domain.repository.RoleRepository;
 import org.infinite.identityaccess.domain.repository.UserRepository;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

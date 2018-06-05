@@ -17,7 +17,6 @@ package com.abigdreamer.saasovation.agilepm.port.adapter.messaging.rabbitmq;
 import java.util.Date;
 import java.util.Properties;
 
-import com.abigdreamer.infinity.common.serializer.PropertiesSerializer;
 import com.abigdreamer.infinity.ddd.notification.NotificationReader;
 import com.abigdreamer.infinity.ddd.port.adapter.messaging.ExchangeListener;
 import com.abigdreamer.infinity.ddd.port.adapter.messaging.Exchanges;
@@ -28,6 +27,7 @@ import com.abigdreamer.infinity.ddd.port.adapter.messaging.rabbitmq.MessageProdu
 import com.abigdreamer.saasovation.agilepm.application.product.ProductApplicationService;
 import com.abigdreamer.saasovation.agilepm.application.product.StartDiscussionInitiationCommand;
 import com.abigdreamer.saasovation.agilepm.port.adapter.messaging.ProductDiscussionExclusiveOwnerId;
+import com.rapidark.framework.commons.serializer.PropertiesSerializer;
 
 
 public class RabbitMQProductDiscussionRequestedListener

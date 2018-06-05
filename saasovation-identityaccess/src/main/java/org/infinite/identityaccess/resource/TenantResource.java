@@ -12,8 +12,8 @@ import org.infinite.identityaccess.application.IdentityApplicationService;
 import org.infinite.identityaccess.domain.model.identity.Tenant;
 import org.jboss.resteasy.annotations.cache.Cache;
 
-import com.abigdreamer.infinity.common.serializer.ObjectSerializer;
 import com.abigdreamer.infinity.ddd.media.OvationsMediaType;
+import com.rapidark.framework.commons.serializer.ObjectSerializer;
 
 
 /**

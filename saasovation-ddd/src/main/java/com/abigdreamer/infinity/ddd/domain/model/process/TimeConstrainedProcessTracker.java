@@ -17,8 +17,8 @@ package com.abigdreamer.infinity.ddd.domain.model.process;
 import java.lang.reflect.Constructor;
 import java.util.Date;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
 import com.abigdreamer.infinity.ddd.domain.model.DomainEventPublisher;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 public class TimeConstrainedProcessTracker extends AssertionConcern {

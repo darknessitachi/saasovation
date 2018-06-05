@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.iq80.leveldb.DB;
+
 import com.abigdreamer.infinity.ddd.domain.model.DomainEvent;
 import com.abigdreamer.infinity.ddd.event.EventSerializer;
 import com.abigdreamer.infinity.ddd.event.EventStore;
 import com.abigdreamer.infinity.ddd.event.StoredEvent;
-import com.abigdreamer.infinity.persistence.leveldb.AbstractLevelDBRepository;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBKey;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
-
-import org.iq80.leveldb.DB;
+import com.rapidark.framework.persistence.leveldb.AbstractLevelDBRepository;
+import com.rapidark.framework.persistence.leveldb.LevelDBKey;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
 
 
 /**

@@ -17,8 +17,8 @@ import org.infinite.identityaccess.application.representation.UserRepresentation
 import org.infinite.identityaccess.domain.model.identity.User;
 import org.infinite.identityaccess.domain.model.identity.UserDescriptor;
 
-import com.abigdreamer.infinity.common.serializer.ObjectSerializer;
 import com.abigdreamer.infinity.ddd.media.OvationsMediaType;
+import com.rapidark.framework.commons.serializer.ObjectSerializer;
 
 
 /**

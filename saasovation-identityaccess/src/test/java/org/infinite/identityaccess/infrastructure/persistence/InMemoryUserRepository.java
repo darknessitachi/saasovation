@@ -10,7 +10,7 @@ import org.infinite.identityaccess.domain.model.identity.TenantId;
 import org.infinite.identityaccess.domain.model.identity.User;
 import org.infinite.identityaccess.domain.repository.UserRepository;
 
-import com.github.rapidark.framework.persistence.CleanableStore;
+import com.rapidark.framework.persistence.CleanableStore;
 
 
 /**

@@ -3,12 +3,12 @@ package com.abigdreamer.infinity.ddd.media;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.abigdreamer.infinity.common.serializer.AbstractSerializer;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.rapidark.framework.commons.serializer.AbstractSerializer;
 
 public abstract class AbstractJSONMediaReader {
 

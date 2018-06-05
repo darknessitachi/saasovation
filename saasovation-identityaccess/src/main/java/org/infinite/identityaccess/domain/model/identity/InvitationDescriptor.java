@@ -2,7 +2,7 @@ package org.infinite.identityaccess.domain.model.identity;
 
 import java.util.Date;
 
-import com.abigdreamer.infinity.common.lang.AssertionConcern;
+import com.rapidark.framework.commons.lang.AssertionConcern;
 
 
 /**

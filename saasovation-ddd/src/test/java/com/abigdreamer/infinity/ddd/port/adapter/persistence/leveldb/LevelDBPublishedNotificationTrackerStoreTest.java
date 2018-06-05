@@ -14,18 +14,17 @@
 
 package com.abigdreamer.infinity.ddd.port.adapter.persistence.leveldb;
 
-import junit.framework.TestCase;
+import org.iq80.leveldb.DB;
 
 import com.abigdreamer.infinity.ddd.event.EventStore;
 import com.abigdreamer.infinity.ddd.event.MockEventStore;
 import com.abigdreamer.infinity.ddd.notification.NotificationLog;
 import com.abigdreamer.infinity.ddd.notification.NotificationLogFactory;
 import com.abigdreamer.infinity.ddd.notification.PublishedNotificationTracker;
-import com.abigdreamer.infinity.ddd.port.adapter.persistence.leveldb.LevelDBPublishedNotificationTrackerStore;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBProvider;
-import com.abigdreamer.infinity.persistence.leveldb.LevelDBUnitOfWork;
+import com.rapidark.framework.persistence.leveldb.LevelDBProvider;
+import com.rapidark.framework.persistence.leveldb.LevelDBUnitOfWork;
 
-import org.iq80.leveldb.DB;
+import junit.framework.TestCase;
 
 
 public class LevelDBPublishedNotificationTrackerStoreTest

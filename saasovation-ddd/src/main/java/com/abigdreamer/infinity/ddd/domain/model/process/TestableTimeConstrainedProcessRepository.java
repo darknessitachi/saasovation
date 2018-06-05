@@ -5,7 +5,7 @@ import javax.persistence.PersistenceException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-import com.abigdreamer.infinity.persistence.hibernate.HibernateSessionSupport;
+import com.rapidark.framework.persistence.hibernate.HibernateSessionSupport;
 
 
 public class TestableTimeConstrainedProcessRepository

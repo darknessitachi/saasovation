@@ -1,6 +1,6 @@
 package com.abigdreamer.infinity.ddd.notification;
 
-import com.abigdreamer.infinity.common.serializer.AbstractSerializer;
+import com.rapidark.framework.commons.serializer.AbstractSerializer;
 
 public class NotificationSerializer extends AbstractSerializer {
 
